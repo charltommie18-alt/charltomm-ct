@@ -1,0 +1,92 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Work With Me - CharlTomm CT</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,system-ui;background:#08080a;color:#e5e5e5;min-height:100vh}
+.topbar{background:#111115;border-bottom:1px solid #1f1f25;display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:36px;height:36px;background:#fff;color:#000;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px}
+.brand h2{font-size:13px;letter-spacing:1.5px;line-height:1.2}
+.brand h2 span{color:#d4ff00;display:block;font-size:11px}
+.btn-back{color:#aaa;text-decoration:none;font-size:13px;border:1px solid #23232b;padding:8px 14px;border-radius:999px}
+.wrap{max-width:640px;margin:0 auto;padding:40px 20px}
+.card{background:#141418;border:1px solid #23232b;border-radius:20px;padding:28px}
+h1{font-size:32px;margin-bottom:8px}
+.sub{color:#888;font-size:14px;margin-bottom:24px;line-height:1.5}
+label{display:block;font-size:12px;letter-spacing:1px;color:#aaa;margin:16px 0 6px;font-weight:600}
+input,select,textarea{width:100%;background:#0e0e12;border:1px solid #23232b;border-radius:10px;padding:12px 14px;color:#fff;font-size:14px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#d4ff00}
+textarea{min-height:120px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.btn-submit{width:100%;background:#d4ff00;color:#000;border:none;padding:14px;border-radius:999px;font-weight:800;font-size:15px;margin-top:22px;cursor:pointer}
+.btn-submit:hover{transform:scale(1.02)}
+.note{margin-top:16px;text-align:center;color:#666;font-size:11px}
+.success{display:none;background:#0e1a0e;border:1px solid #1f3a1f;border-radius:14px;padding:20px;text-align:center;margin-top:20px}
+.success h3{color:#d4ff00;margin-bottom:6px}
+.success p{color:#aaa;font-size:13px}
+</style></head><body>
+<div class="topbar">
+<div class="brand"><div class="logo">CT</div><h2>CT FUN B2B SAAS <span>LET'S BUILD</span></h2></div>
+<a class="btn-back" href="data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPgo8dGl0bGU+Q2hhcmxUb21tIENUIHwgQjJCIFNhYVMgVHV0b3JpYWxzICYgUmV2aWV3czwvdGl0bGU+CjxzdHlsZT4KKnttYXJnaW46MDtwYWRkaW5nOjA7Ym94LXNpemluZzpib3JkZXItYm94fQpib2R5e2ZvbnQtZmFtaWx5Oi1hcHBsZS1zeXN0ZW0sQmxpbmtNYWNTeXN0ZW1Gb250LCdTZWdvZSBVSScsUm9ib3RvLHNhbnMtc2VyaWY7YmFja2dyb3VuZDojMGEwYTBhO2NvbG9yOiNmZmY7bGluZS1oZWlnaHQ6MS42fQouY29udGFpbmVye21heC13aWR0aDo5MDBweDttYXJnaW46MCBhdXRvO3BhZGRpbmc6MjBweH0KLmhlcm97dGV4dC1hbGlnbjpjZW50ZXI7cGFkZGluZzo2MHB4IDIwcHh9Ci5oZXJvIGgxe2ZvbnQtc2l6ZTo0MnB4O2ZvbnQtd2VpZ2h0OjgwMDttYXJnaW4tYm90dG9tOjE2cHg7YmFja2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoOTBkZWcsIzYwYTVmYSwjYTc4YmZhKTstd2Via2l0LWJhY2tncm91bmQtY2xpcDp0ZXh0Oy13ZWJraXQtdGV4dC1maWxsLWNvbG9yOnRyYW5zcGFyZW50fQouaGVybyBwe2ZvbnQtc2l6ZToxOHB4O2NvbG9yOiM5Y2EzYWY7bWFyZ2luLWJvdHRvbTozMnB4fQouYnRue2Rpc3BsYXk6aW5saW5lLWJsb2NrO2JhY2tncm91bmQ6I2ZmZjtjb2xvcjojMDAwO3BhZGRpbmc6MTRweCAzMnB4O2JvcmRlci1yYWRpdXM6OTk5cHg7Zm9udC13ZWlnaHQ6NzAwO3RleHQtZGVjb3JhdGlvbjpub25lO21hcmdpbjo4cHg7dHJhbnNpdGlvbjowLjJzfQouYnRuOmhvdmVye3RyYW5zZm9ybTpzY2FsZSgxLjA1KX0KLmJ0bi1vdXRsaW5le2JhY2tncm91bmQ6dHJhbnNwYXJlbnQ7Y29sb3I6I2ZmZjtib3JkZXI6MXB4IHNvbGlkICMzMzN9Ci5ncmlke2Rpc3BsYXk6Z3JpZDtncmlkLXRlbXBsYXRlLWNvbHVtbnM6MWZyO2dhcDoxNnB4O21hcmdpbi10b3A6NDBweH0KQG1lZGlhKG1pbi13aWR0aDo3MDBweCl7LmdyaWR7Z3JpZC10ZW1wbGF0ZS1jb2x1bW5zOjFmciAxZnIgMWZyfX0KLmNhcmR7YmFja2dyb3VuZDojMTcxNzE3O2JvcmRlcjoxcHggc29saWQgIzI2MjYyNjtib3JkZXItcmFkaXVzOjE2cHg7cGFkZGluZzoyNHB4fQouY2FyZCBoM3tmb250LXNpemU6MjBweDttYXJnaW4tYm90dG9tOjhweH0KLmNhcmQgcHtjb2xvcjojOWNhM2FmO2ZvbnQtc2l6ZToxNHB4O21hcmdpbi1ib3R0b206MTZweH0KLmJhZGdle2Rpc3BsYXk6aW5saW5lLWJsb2NrO2JhY2tncm91bmQ6IzFmMjkzNztwYWRkaW5nOjRweCAxMHB4O2JvcmRlci1yYWRpdXM6OTk5cHg7Zm9udC1zaXplOjEycHg7bWFyZ2luLWJvdHRvbToxMnB4fQoudmlkZW8tYm94e2JhY2tncm91bmQ6IzExMTtib3JkZXItcmFkaXVzOjEycHg7YXNwZWN0LXJhdGlvOjkvMTY7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyO2NvbG9yOiM1NTU7bWFyZ2luLXRvcDoyMHB4O2JvcmRlcjoxcHggZGFzaGVkICMzMzN9CmZvb3Rlcnt0ZXh0LWFsaWduOmNlbnRlcjtwYWRkaW5nOjQwcHg7Y29sb3I6IzU1NTtmb250LXNpemU6MTNweH0KYXtjb2xvcjojNjBhNWZhfQo8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5Pgo8ZGl2IGNsYXNzPSJjb250YWluZXIiPgo8ZGl2IGNsYXNzPSJoZXJvIj4KPGgxPkNoYXJsVG9tbSBDVDwvaDE+CjxwPkIyQiBTYWFTIHR1dG9yaWFscyBmb3IgZm91bmRlcnMuIFNob3J0LWZvcm0gdmlkZW9zIHRoYXQgZHJpdmUgc2lnbnVwcy4gV2ViZmxvdywgbW9uZGF5LmNvbSwgUmlwcGxpbmcsIEhSIHRlY2ggJiBwcm9kdWN0aXZpdHkgdG9vbHMuPC9wPgo8YSBjbGFzcz0iYnRuIiBocmVmPSJtYWlsdG86Y2hhcmxAY2hhcmx0b21tLWN0Lm5ldGxpZnkuYXBwIj5Xb3JrIFdpdGggTWU8L2E+CjxhIGNsYXNzPSJidG4gYnRuLW91dGxpbmUiIGhyZWY9IiN0b29scyI+U2VlIERlbW9zPC9hPgo8ZGl2IGNsYXNzPSJ2aWRlby1ib3giPllvdXIgVGlrVG9rIC8gUmVlbHMgZW1iZWRkZWQgaGVyZSAtIHJlcGxhY2Ugd2l0aCBpZnJhbWU8L2Rpdj4KPC9kaXY+CjxkaXYgaWQ9InRvb2xzIiBjbGFzcz0iZ3JpZCI+CjxkaXYgY2xhc3M9ImNhcmQiPgo8c3BhbiBjbGFzcz0iYmFkZ2UiPldFQkZMT1c8L3NwYW4+CjxoMz5XZWJmbG93IGZvciBTdGFydHVwczwvaDM+CjxwPkhvdyBJIGJ1aWxkIGxhbmRpbmcgcGFnZXMgdGhhdCBjb252ZXJ0IGluIDMwIG1pbnV0ZXMuIE5vIGNvZGUgdHV0b3JpYWwuPC9wPgo8YSBocmVmPSJodHRwczovL3dlYmZsb3cuY29tIiB0YXJnZXQ9Il9ibGFuayI+V2F0Y2ggRGVtbyDihpI8L2E+CjwvZGl2Pgo8ZGl2IGNsYXNzPSJjYXJkIj4KPHNwYW4gY2xhc3M9ImJhZGdlIj5NT05EQVkuQ09NPC9zcGFuPgo8aDM+bW9uZGF5LmNvbSBXb3JrZmxvdyBTZXR1cDwvaDM+CjxwPlByb2plY3QgbWFuYWdlbWVudCBmb3IgcmVtb3RlIHRlYW1zLiBGdWxsIHNldHVwIGd1aWRlIGZvciBmb3VuZGVycy48L3A+CjxhIGhyZWY9Imh0dHBzOi8vbW9uZGF5LmNvbSIgdGFyZ2V0PSJfYmxhbmsiPldhdGNoIERlbW8g4oaSPC9hPgo8L2Rpdj4KPGRpdiBjbGFzcz0iY2FyZCI+CjxzcGFuIGNsYXNzPSJiYWRnZSI+UklQUExJTkc8L3NwYW4+CjxoMz5SaXBwbGluZyBIUiAmIElUPC9oMz4KPHA+QXV0b21hdGUgb25ib2FyZGluZywgcGF5cm9sbCBhbmQgZGV2aWNlIG1hbmFnZW1lbnQuIFNvdXRoIEFmcmljYSBndWlkZS48L3A+CjxhIGhyZWY9Imh0dHBzOi8vYXRvbS5yaXBwbGluZy5jb20iIHRhcmdldD0iX2JsYW5rIj5XYXRjaCBEZW1vIOKGkjwvYT4KPC9kaXY+CjwvZGl2Pgo8ZGl2IHN0eWxlPSJtYXJnaW4tdG9wOjYwcHg7YmFja2dyb3VuZDojMTcxNzE3O3BhZGRpbmc6MzJweDtib3JkZXItcmFkaXVzOjE2cHg7Ym9yZGVyOjFweCBzb2xpZCAjMjYyNjI2Ij4KPGgyIHN0eWxlPSJtYXJnaW4tYm90dG9tOjEycHgiPkFib3V0IENoYXJsPC9oMj4KPHAgc3R5bGU9ImNvbG9yOiM5Y2EzYWYiPkJhc2VkIGluIENhcGUgVG93biwgU291dGggQWZyaWNhLiBJIGNyZWF0ZSBBSS1wcmVzZW50ZXIgKyBzY3JlZW4tc2hhcmUgdHV0b3JpYWxzIGZvciBCMkIgU2FhUy4gMTBrKyBtb250aGx5IHZpZXdzIGFjcm9zcyBUaWtUb2ssIFlvdVR1YmUgU2hvcnRzICYgTGlua2VkSW4uIEZvY3VzOiBoZWxwaW5nIGZvdW5kZXJzIGNob29zZSBhbmQgaW1wbGVtZW50IHRvb2xzIHRoYXQgc2NhbGUuPC9wPgo8cCBzdHlsZT0ibWFyZ2luLXRvcDoxNnB4Ij48c3Ryb25nPkNvbnRhY3Q6PC9zdHJvbmc+IDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9jaGFybHRvbW0iPkxpbmtlZEluPC9hPiDigKIgPGEgaHJlZj0ibWFpbHRvOmNoYXJsLnRvbWxpbnNvbkBleGFtcGxlLmNvbSI+RW1haWw8L2E+PC9wPgo8L2Rpdj4KPGZvb3Rlcj4KwqkgMjAyNiBDaGFybFRvbW0gQ1Qg4oCiIGNoYXJsdG9tbS1jdC5uZXRsaWZ5LmFwcCDigKIgQnVpbHQgZm9yIEIyQiBTYWFTIHBhcnRuZXJzaGlwczxicj4KPGEgaHJlZj0iIyI+UHJpdmFjeTwvYT4g4oCiIDxhIGhyZWY9IiMiPlRlcm1zPC9hPgo8L2Zvb3Rlcj4KPC9kaXY+CjwvYm9keT4KPC9odG1sPgo=">← Back</a>
+</div>
+
+<div class="wrap">
+<div class="card">
+<h1>Let's Build Your System</h1>
+<p class="sub">Tell me your problem, idea or automation. I reply within 12 hours to charltommie18@gmail.com. No Yahoo/PayPal popup — just this form.</p>
+
+<form id="workForm" action="https://formsubmit.co/charltommie18@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Client Project - CT FUN">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://charltomm-ct.netlify.app/thanks.html">
+
+<div class="row">
+<div><label>FULL NAME *</label><input type="text" name="name" required placeholder="John Doe"></div>
+<div><label>BUSINESS EMAIL *</label><input type="email" name="email" required placeholder="john@company.com"></div>
+</div>
+
+<label>COMPANY / PROJECT</label><input type="text" name="company" placeholder="Your startup / project name">
+
+<label>WHAT DO YOU DO? *</label>
+<select name="role" required>
+<option value="">Select...</option>
+<option>SaaS Founder</option>
+<option>Startup Team</option>
+<option>Agency</option>
+<option>HR / Operations</option>
+<option>Other</option>
+</select>
+
+<label>WHAT'S YOUR PROBLEM OR IDEA? *</label>
+<textarea name="problem" required placeholder="Ex: Need Rippling onboarding tutorial for my team, or need a Webflow landing that converts..."></textarea>
+
+<div class="row">
+<div><label>BUDGET RANGE</label>
+<select name="budget"><option value="">Select...</option><option><$1k</option><option>$1k-$3k</option><option>$3k-$5k</option><option>$5k+</option></select></div>
+<div><label>TIMELINE</label>
+<select name="timeline"><option value="">Select...</option><option>ASAP</option><option>This Month</option><option>Next Month</option><option>Exploring</option></select></div>
+</div>
+
+<button class="btn-submit" type="submit">SEND MY PROJECT →</button>
+<p class="note">Direct: charltommie18@gmail.com • Response <12h • No spam • NDA available</p>
+</form>
+
+<div class="success" id="success">
+<h3>✅ Got it!</h3>
+<p>Thanks! I got your project details and will email you within 12 hours.<br>- Charl</p>
+</div>
+
+</div>
+</div>
+
+<script>
+const form=document.getElementById('workForm');
+const success=document.getElementById('success');
+form.addEventListener('submit',function(e){
+ // show success instantly while formsubmit sends in background
+ setTimeout(()=>{form.style.display='none';success.style.display='block';},500);
+});
+</script>
+</body></html>
